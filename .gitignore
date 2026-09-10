@@ -1,0 +1,69 @@
+# ==============================================================================
+# .gitignore — Repositório de Materiais AWS-SBG-CG
+# ==============================================================================
+
+# Sistema Operacional
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Chaves, Credenciais e Segredos AWS (CRÍTICO)
+*.pem
+*.key
+*.pkcs12
+*.pfx
+*.id_rsa
+*.id_ed25519
+.env
+.env.*
+!.env.example
+credentials
+config
+aws_credentials
+*.tfvars
+*.tfvars.json
+cdk.context.json
+
+# IDEs e Editores
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+*.swp
+*.swo
+*~
+
+# Python (Ambientes Virtuais e Cache)
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.pytest_cache/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+
+# Arquivos de Build & Temporários
+dist/
+build/
+*.tmp
+*.temp
+*.bak
+
+# Arquivos de mídia grandes brutos (prefira PDFs otimizados ou links externos)
+*.mov
+*.mp4
+*.mkv
+*.avi
+*.raw
